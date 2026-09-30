@@ -1,0 +1,39 @@
+# Render Blueprint for the FastAPI backend.
+#
+# IMPORTANT - root directory: this file lives at backend/render.yaml for
+# organization (paired with backend/.env.example), but the service's build
+# and start commands below must run from the REPOSITORY ROOT, not backend/ -
+# backend/ imports sibling packages (models/, preprocessing/,
+# template_protection/, fusion/, evaluation/, embeddings/) that only resolve
+# when the process's working directory is the repo root, and requirements.txt
+# lives at the repo root too. When creating this Blueprint in the Render
+# dashboard (New -> Blueprint, pointing at this file), leave `rootDir`
+# unset/"." as set below - do NOT change it to "backend".
+#
+# Reference: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: biometric-auth-backend
+    env: python
+    plan: free
+    rootDir: .
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      # Set for real in the Render dashboard (Environment tab) - `sync: false`
+      # means Render will prompt for a value instead of reading one from
+      # this file, so the real secret never has to be committed.
+      - key: MASTER_SECRET
+        sync: false
+      - key: ENV
+        value: production
+      # Set to the deployed Vercel frontend's exact origin, e.g.
+      # https://your-app.vercel.app (no trailing slash). sync: false for the
+      # same reason as MASTER_SECRET - fill in after the Vercel deploy
+      # exists, so the real URL is known.
+      - key: CORS_ORIGIN
+        sync: false

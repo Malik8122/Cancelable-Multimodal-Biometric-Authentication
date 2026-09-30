@@ -1,0 +1,28 @@
+{
+  "timestamp_utc": "2026-09-25T03:11:17+00:00",
+  "os": "Windows 11 (10.0.26200)",
+  "python": "3.13.1",
+  "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "cpu_logical_cores": 12,
+  "git_commit": "873c13ef96c67034657adbd7cc3789b0a0b17037",
+  "git_branch": "main",
+  "git_worktree_dirty": true,
+  "ram_gb": 8.29,
+  "pytorch": "2.14.0+cpu",
+  "cuda": "NOT_AVAILABLE",
+  "cuda_available": false,
+  "gpu": "none",
+  "gpu_memory_gb": "NOT_AVAILABLE",
+  "torch_threads": 10,
+  "packages": {
+    "numpy": "2.2.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torchvision": "0.29.0+cpu",
+    "torchaudio": "2.11.0+cpu",
+    "speechbrain": "1.1.1",
+    "facenet_pytorch": "installed",
+    "albumentations": "2.0.8",
+    "cv2": "5.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+evidence_label,modality,bin_width,D_sys,n_mated,n_non_mated,null_floor_mean,null_floor_p95,exceeds_null_p95,note,distribution,n,mean,sd,median,q1,q3,min,max,ci95_low,ci95_high
+REAL DATA,face,0.0078125,0.0212466,4523,80900,0.0138731,0.0169137,True,,,,,,,,,,,,
+REAL DATA,face,0.015625,0.0179944,4523,80900,0.00972288,0.0130283,True,,,,,,,,,,,,
+REAL DATA,face,0.03125,0.0175869,4523,80900,0.00705811,0.0104611,True,,,,,,,,,,,,
+REAL DATA,face,0.015625,0.0192006,1618,80900,0.017221,0.0230836,False,mated = the SAME sample under two keys (worst case),,,,,,,,,,,
+REAL DATA,face,,,,,,,,,mated_cross_key,4523,0.498828,0.0306613,0.496094,0.476562,0.519531,0.390625,0.601562,0.497934,0.499722
+REAL DATA,face,,,,,,,,,non_mated_cross_key,80900,0.499785,0.0312888,0.5,0.480469,0.519531,0.347656,0.632812,0.499569,0.5
+REAL DATA,face,,,,,,,,,same_sample_cross_key,1618,0.499223,0.0305794,0.5,0.476562,0.519531,0.40625,0.621094,0.497731,0.500714
+REAL DATA,voice,0.0078125,0.0308028,727,17273,0.0387291,0.0499874,False,,,,,,,,,,,,
+REAL DATA,voice,0.015625,0.0200401,727,17273,0.0259051,0.0398161,False,,,,,,,,,,,,
+REAL DATA,voice,0.03125,0.0154028,727,17273,0.0157559,0.0248233,False,,,,,,,,,,,,
+REAL DATA,voice,0.015625,0.247513,24,17273,0.140939,0.22612,True,mated = the SAME sample under two keys (worst case),,,,,,,,,,,
+REAL DATA,voice,,,,,,,,,mated_cross_key,727,0.498829,0.0296503,0.5,0.480469,0.519531,0.414062,0.585938,0.49667,0.500988
+REAL DATA,voice,,,,,,,,,non_mated_cross_key,17273,0.499858,0.0308941,0.5,0.480469,0.519531,0.386719,0.628906,0.499398,0.500319
+REAL DATA,voice,,,,,,,,,same_sample_cross_key,24,0.494629,0.0268618,0.5,0.467773,0.511719,0.453125,0.554688,0.483286,0.505972

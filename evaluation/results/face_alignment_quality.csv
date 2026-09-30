@@ -1,0 +1,13 @@
+evidence_label,metric,stage,n,mean,median,sd,p95
+REAL DATA,eye_line_angle_abs_deg,before_alignment (baseline bbox crop),6141,2.88567,2.20762,2.67202,7.67961
+REAL DATA,eye_line_angle_abs_deg,after_alignment,6141,0.982864,0.718553,0.963072,2.77477
+REAL DATA,inter_eye_distance_px,before_alignment (baseline bbox crop),6141,71.8464,72.1935,4.22241,77.7279
+REAL DATA,inter_eye_distance_px,after_alignment,6141,60.7886,61.1167,3.97705,66.1698
+REAL DATA,eye_midpoint_offset_from_center_px,before_alignment (baseline bbox crop),6141,22.4338,21.4153,6.09166,33.2504
+REAL DATA,eye_midpoint_offset_from_center_px,after_alignment,6141,21.2315,21.3944,1.56341,23.4654
+REAL DATA,mouth_midpoint_y_px,before_alignment (baseline bbox crop),6141,120.742,120.968,4.19937,127.199
+REAL DATA,mouth_midpoint_y_px,after_alignment,6141,125.087,125.551,2.41236,128.223
+REAL DATA,landmark_rms_error_to_template_px,before_alignment (baseline bbox crop),6141,14.5996,12.4826,8.50759,30.8979
+REAL DATA,landmark_rms_error_to_template_px,after_alignment,6141,8.07909,8.07773,2.49788,12.1021
+REAL DATA,failure_to_align,aligned pipeline,6141,0,,,
+REAL DATA,no_face_detected,both pipelines,6141,0,,,

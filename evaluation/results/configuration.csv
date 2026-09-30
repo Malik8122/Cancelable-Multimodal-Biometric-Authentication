@@ -1,0 +1,34 @@
+evidence_label,parameter,value,source
+CONFIGURATION,Face embedding dimension,512,models/face/inference.py:17
+CONFIGURATION,Voice embedding dimension,192,models/voice/inference.py:33
+CONFIGURATION,Embedding normalization,L2 (unit norm),models/common/base_embedder.py:79
+CONFIGURATION,Template bits (runtime),256,backend/config.py:92
+CONFIGURATION,"Template bits (library default, unused at runtime)",128,template_protection/biohash.py:62
+CONFIGURATION,Template format version,1,template_protection/biohash.py:55
+CONFIGURATION,Template sets per user (pool),4,backend/config.py:98
+CONFIGURATION,"Face threshold (estimated cosine, accept >=)",0.8,backend/config.py:136
+CONFIGURATION,"Voice threshold (estimated Euclidean distance, accept <=)",0.75,backend/config.py:141
+CONFIGURATION,Fallback Hamming threshold (no metric calibration),0.9,backend/config.py:129
+CONFIGURATION,HKDF hash,SHA-256,template_protection/hkdf_keys.py:61
+CONFIGURATION,HKDF seed length (bytes),32,template_protection/hkdf_keys.py:30
+CONFIGURATION,HKDF salt,SHA-256(application_id|user_id|modality|key_version),template_protection/hkdf_keys.py:85
+CONFIGURATION,Quantization threshold sigma,0.5 x std(projected),template_protection/transform.py:104
+CONFIGURATION,Projection,"Haar-random orthonormal rows (QR of seeded Gaussian), blocks of <= D rows",template_protection/transform.py:61
+CONFIGURATION,Default fusion policy,ALL_REQUIRED,fusion/config.py:38
+CONFIGURATION,Fusion weights,"equal (1.0 each, renormalized)",fusion/score_fusion.py:32
+CONFIGURATION,WEIGHTED policy veto floor (fusion scale),0,fusion/config.py:47
+CONFIGURATION,Max upload size (bytes),5000000,backend/config.py:112
+CONFIGURATION,Face input size (px),160,preprocessing/face.py:25
+CONFIGURATION,Face enrollment poses,"front, left, right, up, down",backend/services/face_enrollment.py:19
+CONFIGURATION,Face minimum valid poses,3,backend/services/face_enrollment.py:36
+CONFIGURATION,Face blur gate (Laplacian variance >=),25,preprocessing/face.py:31
+CONFIGURATION,Face detection confidence gate (>=),0.9,preprocessing/face.py:44
+CONFIGURATION,Face size ratio gate (>=),0.15,preprocessing/face.py:50
+CONFIGURATION,Face centre offset gate (<=),0.35,preprocessing/face.py:57
+CONFIGURATION,Face roll gate (degrees <=),20,preprocessing/face.py:64
+CONFIGURATION,Face yaw ratio gate (<=),0.2,preprocessing/face.py:71
+CONFIGURATION,Voice sample rate (Hz),16000,preprocessing/voice.py:37
+CONFIGURATION,Voice clip length (s),4,preprocessing/voice.py:38
+CONFIGURATION,Voice mel bins,80,preprocessing/voice.py:39
+CONFIGURATION,Voice n_fft / hop,400 / 160,preprocessing/voice.py:40
+CONFIGURATION,Voice enrollment consistency: EXCELLENT / GOOD / FAIR (cosine >=),0.85 / 0.75 / 0.6,backend/services/recording_quality.py:28

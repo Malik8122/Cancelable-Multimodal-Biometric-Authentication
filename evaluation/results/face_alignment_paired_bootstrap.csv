@@ -1,0 +1,5 @@
+evidence_label,contrast,system_a,system_b,EER_a,EER_b,delta_EER_b_minus_a,delta_ci95_low,delta_ci95_high,fraction_resamples_delta_ge_0,n_boot,resampling_unit,n_identities,n_genuine,n_impostor
+REAL DATA,"F_aligned_v2 - E_bbox_v2 (controlled, PRIMARY)",E_bbox_v2,F_aligned_v2,0.0866985,0.0718083,-0.0148902,-0.0189679,-0.00691637,0,300,enrolled identity,1618,4523,80900
+REAL DATA,F_aligned_v2 - A_deployed_bbox,A_deployed_bbox,F_aligned_v2,0.0849549,0.0718083,-0.0131466,-0.0176506,-0.00624728,0,300,enrolled identity,1618,4523,80900
+REAL DATA,B_deployed_aligned - A_deployed_bbox (ablation),A_deployed_bbox,B_deployed_aligned,0.0849549,0.0995897,0.0146348,0.0090743,0.0223804,1,300,enrolled identity,1618,4523,80900
+REAL DATA,D_aligned_v1 - C_repro_bbox (confounded),C_repro_bbox,D_aligned_v1,0.0841212,0.147219,0.0630974,0.0547232,0.0698045,1,300,enrolled identity,1618,4523,80900

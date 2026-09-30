@@ -1,0 +1,7 @@
+evidence_label,modality,representation,n_genuine,n_impostor,EER,EER_ci95_low,EER_ci95_high,EER_threshold,ROC_AUC,identical_pairs
+REAL DATA,face,raw_embedding_cosine,4523,80900,0.0711892,0.0660476,0.0769374,0.300764,0.968234,True
+REAL DATA,face,protected_256bit_hamming,4523,80900,0.0849549,0.077725,0.0892687,0.652344,0.964089,True
+REAL DATA,face,delta_protected_minus_raw,,,0.0137657,,,,-0.00414482,True
+REAL DATA,voice,raw_embedding_cosine,727,17273,0.0220618,0.019093,0.0288874,0.464845,0.99803,True
+REAL DATA,voice,protected_256bit_hamming,727,17273,0.0232417,0.0194625,0.0302646,0.703125,0.996687,True
+REAL DATA,voice,delta_protected_minus_raw,,,0.00117986,,,,-0.00134295,True

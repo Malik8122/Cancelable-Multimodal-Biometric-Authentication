@@ -1,0 +1,15 @@
+{
+  "id": "<your-kaggle-username>/voice-embedding-training-phase-1-extension",
+  "title": "Voice Embedding Training (Phase 1 extension)",
+  "code_file": "voice-embedding-training.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "gaurav41/voxceleb1-audio-wav-files-for-india-celebrity"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

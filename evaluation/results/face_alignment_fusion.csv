@@ -1,0 +1,25 @@
+evidence_label,system,policy,genuine_acceptance,impostor_acceptance,FAR,FRR,n_genuine,n_impostor,genuine_rejected_by_face,genuine_rejected_by_voice,EER,face_only_EER
+REAL DATA,A_deployed_bbox,face_only,0.196528,0,0,0.803472,1440,33120,0.803472,0.24375,,
+REAL DATA,A_deployed_bbox,face+voice ALL_REQUIRED,0.146528,0,0,0.853472,1440,33120,0.803472,0.24375,,
+REAL DATA,A_deployed_bbox,face+voice WEIGHTED,0.404167,0,0,0.595833,1440,33120,0.803472,0.24375,,
+REAL DATA,A_deployed_bbox,"score-level mean(face,voice)",,,,,1440,33120,,,0.0153684,0.0815972
+REAL DATA,B_deployed_aligned,face_only,0.178472,3.01932e-05,3.01932e-05,0.821528,1440,33120,0.821528,0.24375,,
+REAL DATA,B_deployed_aligned,face+voice ALL_REQUIRED,0.138194,0,0,0.861806,1440,33120,0.821528,0.24375,,
+REAL DATA,B_deployed_aligned,face+voice WEIGHTED,0.384722,0,0,0.615278,1440,33120,0.821528,0.24375,,
+REAL DATA,B_deployed_aligned,"score-level mean(face,voice)",,,,,1440,33120,,,0.0131944,0.095471
+REAL DATA,C_repro_bbox,face_only,0.205556,0,0,0.794444,1440,33120,0.794444,0.24375,,
+REAL DATA,C_repro_bbox,face+voice ALL_REQUIRED,0.156944,0,0,0.843056,1440,33120,0.794444,0.24375,,
+REAL DATA,C_repro_bbox,face+voice WEIGHTED,0.404167,0,0,0.595833,1440,33120,0.794444,0.24375,,
+REAL DATA,C_repro_bbox,"score-level mean(face,voice)",,,,,1440,33120,,,0.0145833,0.0769626
+REAL DATA,D_aligned_v1,face_only,0.0590278,3.01932e-05,3.01932e-05,0.940972,1440,33120,0.940972,0.24375,,
+REAL DATA,D_aligned_v1,face+voice ALL_REQUIRED,0.0472222,0,0,0.952778,1440,33120,0.940972,0.24375,,
+REAL DATA,D_aligned_v1,face+voice WEIGHTED,0.194444,0,0,0.805556,1440,33120,0.940972,0.24375,,
+REAL DATA,D_aligned_v1,"score-level mean(face,voice)",,,,,1440,33120,,,0.0208182,0.146075
+REAL DATA,E_bbox_v2,face_only,0.20625,0,0,0.79375,1440,33120,0.79375,0.24375,,
+REAL DATA,E_bbox_v2,face+voice ALL_REQUIRED,0.166667,0,0,0.833333,1440,33120,0.79375,0.24375,,
+REAL DATA,E_bbox_v2,face+voice WEIGHTED,0.405556,0,0,0.594444,1440,33120,0.79375,0.24375,,
+REAL DATA,E_bbox_v2,"score-level mean(face,voice)",,,,,1440,33120,,,0.0126661,0.0832729
+REAL DATA,F_aligned_v2,face_only,0.231944,3.01932e-05,3.01932e-05,0.768056,1440,33120,0.768056,0.24375,,
+REAL DATA,F_aligned_v2,face+voice ALL_REQUIRED,0.170833,0,0,0.829167,1440,33120,0.768056,0.24375,,
+REAL DATA,F_aligned_v2,face+voice WEIGHTED,0.449306,0,0,0.550694,1440,33120,0.768056,0.24375,,
+REAL DATA,F_aligned_v2,"score-level mean(face,voice)",,,,,1440,33120,,,0.0131643,0.0695954

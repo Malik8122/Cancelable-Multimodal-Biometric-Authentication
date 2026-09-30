@@ -1,0 +1,9 @@
+{
+  "EER": 0.021435975307721563,
+  "EER_threshold": 0.22105090835757113,
+  "AUC": 0.9887277848474374,
+  "genuine_pairs": 5272,
+  "impostor_pairs": 122493,
+  "samples": 506,
+  "note": "test identities are the training identities (closed-set, as in the notebook)"
+}

@@ -1,0 +1,6 @@
+evidence_label,species,modality,IAPMR,APCER,BPCER,note
+FUTURE WORK,face_print,face,NOT AVAILABLE,NOT APPLICABLE (no PAD subsystem),NOT APPLICABLE (no PAD subsystem),no attack data under data\pad
+FUTURE WORK,face_screen_replay,face,NOT AVAILABLE,NOT APPLICABLE (no PAD subsystem),NOT APPLICABLE (no PAD subsystem),no attack data under data\pad
+FUTURE WORK,face_video_replay,face,NOT AVAILABLE,NOT APPLICABLE (no PAD subsystem),NOT APPLICABLE (no PAD subsystem),no attack data under data\pad
+FUTURE WORK,voice_replay,voice,NOT AVAILABLE,NOT APPLICABLE (no PAD subsystem),NOT APPLICABLE (no PAD subsystem),no attack data under data\pad
+FUTURE WORK,voice_cloning,voice,NOT AVAILABLE,NOT APPLICABLE (no PAD subsystem),NOT APPLICABLE (no PAD subsystem),no attack data under data\pad

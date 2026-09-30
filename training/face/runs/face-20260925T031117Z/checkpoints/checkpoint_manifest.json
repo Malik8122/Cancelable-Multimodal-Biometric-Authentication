@@ -1,0 +1,14 @@
+[
+  {
+    "checkpoint": "face_embedder.pt",
+    "epoch": 10,
+    "timestamp_utc": "2026-09-25T03:26:23+00:00",
+    "git_commit": "873c13ef96c67034657adbd7cc3789b0a0b17037",
+    "random_seed": 42,
+    "train_loss": 0.10677767088569105,
+    "validation_loss": 0.4504398478340384,
+    "validation_accuracy": 0.9219858156028369,
+    "validation_EER": 0.002098897821828656,
+    "validation_AUC": 0.9999864416333861
+  }
+]

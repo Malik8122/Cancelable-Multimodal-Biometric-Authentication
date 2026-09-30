@@ -1,0 +1,7 @@
+evidence_label,check,total,passed,failed,skipped,exit_code,seconds,source,result,errors,warnings
+SOFTWARE VALIDATION,backend pytest,636,636,0,0,0,810.889,evaluation/results/software_validation.csv (python -m evaluation.ieee.audit software),,,
+SOFTWARE VALIDATION,coverage,,,,,,,evaluation/results/software_validation.csv (python -m evaluation.ieee.audit software),NOT AVAILABLE (pytest-cov not installed),,
+SOFTWARE VALIDATION,frontend typecheck (tsc -b),,,,,0,26.8232,evaluation/results/software_validation.csv (python -m evaluation.ieee.audit software),,0,
+SOFTWARE VALIDATION,frontend lint (oxlint),,,,,0,2.84096,evaluation/results/software_validation.csv (python -m evaluation.ieee.audit software),,0,25
+SOFTWARE VALIDATION,frontend build (vite build),,,,,0,41.2696,evaluation/results/software_validation.csv (python -m evaluation.ieee.audit software),success,,
+SOFTWARE VALIDATION,frontend unit tests,,,,,,,evaluation/results/software_validation.csv (python -m evaluation.ieee.audit software),NOT AVAILABLE (no frontend test suite in package.json),,

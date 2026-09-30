@@ -1,0 +1,7 @@
+{
+  "best_epoch": 10,
+  "best_metric": 0.9483568075117371,
+  "metric_name": "validation_accuracy (final epoch)",
+  "checkpoint_path": "training\\face\\aligned_v2\\runs\\face_aligned_v2\\checkpoints\\face_embedder.pt",
+  "selection_rule": "final epoch - the historical notebook has no best-checkpoint selection"
+}

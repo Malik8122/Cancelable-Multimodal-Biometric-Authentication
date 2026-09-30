@@ -1,0 +1,10 @@
+{
+  "os": "Windows 11 (10.0.26200)",
+  "python": "3.13.1",
+  "cpu_logical_cores": 12,
+  "ram_gb": 8.3,
+  "processor": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "torch": "2.14.0+cpu",
+  "gpu": "none (CPU only)",
+  "torch_threads": 10
+}

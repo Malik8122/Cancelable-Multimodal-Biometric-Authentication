@@ -1,0 +1,37 @@
+{
+  "sample_rate": 16000,
+  "clip_seconds": 4.0,
+  "n_mels": 80,
+  "n_fft": 400,
+  "hop_length": 160,
+  "vad_backend": "energy",
+  "vad_energy_threshold_ratio": 0.02,
+  "target_rms": 0.1,
+  "augmentation_enabled": false,
+  "gaussian_noise_std": 0.005,
+  "speed_perturb_rates": [
+    0.9,
+    1.0,
+    1.1
+  ],
+  "time_mask_max_frames": 10,
+  "freq_mask_max_bins": 8,
+  "random_gain_db_range": [
+    -6.0,
+    6.0
+  ],
+  "embedding_dim": 192,
+  "arcface_margin": 0.5,
+  "arcface_scale": 30.0,
+  "batch_size": 64,
+  "num_epochs": 30,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "mixed_precision": true,
+  "early_stopping_patience": 5,
+  "train_val_test_split": [
+    0.7,
+    0.15,
+    0.15
+  ]
+}

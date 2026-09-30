@@ -1,0 +1,11 @@
+evidence_label,scenario,repeats,rss_start_mb_mean,rss_start_mb_max,rss_end_mb_mean,rss_end_mb_max,peak_mb_mean,peak_mb_max,python_heap_peak_mb_mean,python_heap_peak_mb_max,status_mean,status_max
+REAL DATA,baseline_python,3,30.847,31.0231,30.847,31.0231,30.847,31.0231,,,,
+REAL DATA,import_backend,3,30.8797,30.9658,205.384,205.599,205.384,205.599,,,,
+REAL DATA,face_model_loaded,3,30.8647,30.9248,477.062,477.663,477.325,477.925,,,,
+REAL DATA,voice_model_loaded,3,30.832,30.9658,337.606,337.773,337.606,337.773,,,,
+REAL DATA,face_embedding,3,30.9139,30.9903,553.387,563.474,576.411,586.478,,,,
+REAL DATA,voice_embedding,3,30.8401,30.9166,360.97,363.975,363.267,363.975,,,,
+REAL DATA,template_generation,3,30.8593,30.9248,40.4098,40.6692,45.1693,45.2321,3.74614,3.74614,,
+REAL DATA,api_enroll_voice,3,30.8156,30.8838,463.43,463.933,470.408,470.954,,,200,200
+REAL DATA,api_authenticate_face,3,30.8552,31.0477,625.249,625.623,665.276,665.567,,,200,200
+REAL DATA,api_authenticate_face_plus_voice,3,30.8183,30.9617,581.562,582.545,692.493,693.465,,,200,200

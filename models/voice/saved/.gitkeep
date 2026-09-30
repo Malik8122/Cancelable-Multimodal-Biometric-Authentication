@@ -1,0 +1,4 @@
+Trained checkpoints (voice_embedder.pt) land here after running
+notebooks/04_voice_training.ipynb on Colab or the Kaggle kernel in
+kaggle_kernels/voice_training/. Tracked via Git LFS (see .gitattributes) -
+commit them with a normal `git add` once produced.

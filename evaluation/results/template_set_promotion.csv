@@ -1,0 +1,11 @@
+field,value
+experiment,template_set_promotion
+num_users,20
+attempts,80
+accepted,80
+acceptance_rate,1.0
+attempts_mixing_sets,0
+mean_similarity_active_set_1,0.97626953125
+mean_similarity_active_set_2,0.9791015625
+mean_similarity_active_set_3,0.9791015625
+mean_similarity_active_set_4,0.98125

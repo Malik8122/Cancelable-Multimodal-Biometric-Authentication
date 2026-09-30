@@ -1,0 +1,4 @@
+Generated evaluation artifacts (ROC plots, result tables) land here after
+running the Colab notebooks or evaluation/experiments.py. They are
+regenerable, so .gitignore excludes the *.png/*.csv themselves and only this
+placeholder is tracked.

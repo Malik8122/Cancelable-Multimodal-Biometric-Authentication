@@ -1,0 +1,102 @@
+{
+  "template_160_symmetric": [
+    [
+      43.6,
+      63.15
+    ],
+    [
+      116.4,
+      63.15
+    ],
+    [
+      80.0,
+      94.05
+    ],
+    [
+      46.92,
+      120.99
+    ],
+    [
+      113.08,
+      120.99
+    ]
+  ],
+  "template_160_mean": [
+    [
+      45.82,
+      64.18
+    ],
+    [
+      118.63,
+      62.11
+    ],
+    [
+      82.67,
+      94.05
+    ],
+    [
+      51.85,
+      121.65
+    ],
+    [
+      118.01,
+      120.32
+    ]
+  ],
+  "sd_160": [
+    [
+      12.96,
+      3.7
+    ],
+    [
+      13.61,
+      4.03
+    ],
+    [
+      21.57,
+      6.31
+    ],
+    [
+      12.57,
+      3.98
+    ],
+    [
+      12.51,
+      4.26
+    ]
+  ],
+  "order": [
+    "left_eye",
+    "right_eye",
+    "nose",
+    "mouth_left",
+    "mouth_right"
+  ],
+  "coordinate_system": "x right, y down, pixels of the 160x160 baseline crop (MTCNN box, margin 0)",
+  "n_faces_detected": 2984,
+  "n_images": 3023,
+  "n_train_crops": 2065,
+  "source": "LFW min_faces_per_person=20 (face model fine-tuning set), train split seed 42",
+  "arcface_112_scaled_to_160_for_comparison": [
+    [
+      54.71,
+      73.85
+    ],
+    [
+      105.05,
+      73.57
+    ],
+    [
+      80.04,
+      102.48
+    ],
+    [
+      59.36,
+      131.95
+    ],
+    [
+      101.04,
+      131.72
+    ]
+  ]
+}

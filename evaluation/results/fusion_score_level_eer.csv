@@ -1,0 +1,4 @@
+evidence_label,score,EER,AUC
+REAL DATA,face,0.0815972,0.965639
+REAL DATA,voice,0.0275362,0.997048
+REAL DATA,"mean(face,voice)",0.0153684,0.998826

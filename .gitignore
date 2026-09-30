@@ -1,0 +1,67 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- Datasets & raw biometric data (NEVER commit) ---
+data/
+datasets/
+raw_images/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+!docs/**/*.png
+!frontend/**/*.png
+!**/sample_assets/*.png
+
+# --- Model checkpoints tracked via Git LFS, but keep local scratch dirs out ---
+models/**/saved/*.tmp
+*.ckpt.tmp
+
+# --- Backend / DB ---
+*.db
+*.sqlite3
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+# --- Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# --- Evaluation outputs ---
+# Plots stay regenerable/ignored. CSVs from real (Kaggle GPU) training runs
+# are committed deliberately - they represent hours of real compute, are the
+# metrics dashboard's actual data source (backend/api/metrics.py), and
+# aren't something you'd want to silently lose or have to rerun to get back.
+evaluation/results/*.png
+!evaluation/results/.gitkeep
+
+# --- Kaggle credentials / pulled kernel output (never commit) ---
+kaggle.json
+kaggle_output/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Reproduced training runs: checkpoints are large and regenerable (records are committed) ---
+training/*/runs/*/checkpoints/*.pt
+training/*/runs/*/checkpoints/*.h5
+training/*/*/runs/*/checkpoints/*.pt
+
+# Regenerable pytest JUnit report (records the machine hostname); counts are kept in evaluation/results/software_validation.csv
+evaluation/reports/pytest_junit.xml
+
+

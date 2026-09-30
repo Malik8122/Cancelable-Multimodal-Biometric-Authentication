@@ -1,0 +1,5 @@
+evidence_label,modality,representation,score,EER,EER_threshold
+REAL DATA,face,protected_template,estimated_cosine,0.0849549,0.327646
+REAL DATA,face,raw_embedding,raw_cosine,0.0711892,0.300764
+REAL DATA,voice,protected_template,estimated_distance,0.0232417,1.0049
+REAL DATA,voice,raw_embedding,raw_distance,0.0220618,1.03456

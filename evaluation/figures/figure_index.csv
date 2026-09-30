@@ -1,0 +1,33 @@
+file,evidence_label,caption
+face_alignment_quality.png,REAL DATA,"Geometric variation of the 5 landmarks in the 160x160 face crop, baseline bbox crop vs similarity-aligned (held-out LFW)."
+face_alignment_score_distributions.png,REAL DATA,"Genuine/impostor protected-template scores, baseline vs aligned face model (identical pairs)."
+face_threshold_comparison.png,REAL DATA,"FAR/FRR vs face threshold, baseline vs aligned (256-bit protected templates, identical pairs)."
+fig01_system_architecture.png,CONFIGURATION,System architecture of the implemented cancelable multimodal authentication system.
+fig02_enrollment_workflow.png,CONFIGURATION,"Enrollment workflow: name, guided face poses, two voice recordings, four keyed template sets."
+fig03_authentication_workflow.png,CONFIGURATION,Authentication workflow; the stored template is compared only by Hamming similarity.
+fig04_face_pipeline.png,CONFIGURATION,Face pipeline as implemented.
+fig05_voice_pipeline.png,CONFIGURATION,Voice pipeline as implemented.
+fig07_biohash_generation.png,CONFIGURATION,"BioHash generation (template_protection/): three HKDF-SHA256 seeds drive projection, quantization and permutation."
+fig08_template_lifecycle.png,CONFIGURATION,Template-set lifecycle: whole multimodal sets are revoked and promoted together.
+fig09_fusion_architecture.png,CONFIGURATION,Score conversion and fusion: every modality enters fusion on one higher-is-better scale.
+fig10_calibration_curve.png,SYNTHETIC CALIBRATION,"Offline calibration on 19,600 synthetic pairs per modality through the real BioHash: mean ± SD and fitted cubic-in-angle model."
+fig11_calibration_residuals.png,SYNTHETIC CALIBRATION,Synthetic calibration: model residuals and single-estimate standard deviation vs cosine.
+fig12_roc_face_raw_vs_protected.png,REAL DATA,ROC of the face pipeline on real data: raw embedding cosine vs 256-bit protected-template Hamming similarity.
+fig13_roc_voice_raw_vs_protected.png,REAL DATA,ROC of the voice pipeline on real data: raw embedding cosine vs 256-bit protected-template Hamming similarity.
+fig14_roc_protected_templates.png,REAL DATA,"ROC of all modalities, protected templates (solid) vs raw embeddings (dotted), real data."
+fig15_det_curves.png,REAL DATA,"DET curves (normal-deviate axes), protected (solid) vs raw (dotted), real data."
+fig16_threshold_sensitivity.png,REAL DATA,FAR and FRR vs decision threshold (protected: solid; exact raw metric: dotted); dot = protected EER.
+fig17_latency_distribution.png,REAL DATA,Warm latency per pipeline stage on the evaluation machine (median; whiskers min to p95).
+fig18_template_revocation_histogram.png,REAL DATA,Revocation on real embeddings through the shipped template-set code: genuine similarity before/after revocation and the revoked template vs the new active template.
+fig19_unlinkability_histogram.png,REAL DATA,"Unlinkability (Gomez-Barrero et al. 2018): mated vs non-mated cross-key scores on real embeddings, local D<-> (line), D_sys and its permutation null floor (histogram estimate, bin 4/256)."
+fig20_storage_comparison.png,SOFTWARE VALIDATION,"Template payload vs raw embedding size vs measured per-user database growth (SQLite, 1000 users)."
+fig21_calibration_real_scatter.png,REAL DATA,Estimated cosine (from the 256-bit template Hamming similarity) vs true embedding cosine on real pairs; dashed = identity.
+fig22_calibration_real_error_vs_cosine.png,REAL DATA,Estimation error by true-cosine bin on real pairs (mean ± SD) against the SD predicted by the synthetic calibration.
+fig23_calibration_real_residual_hist.png,REAL DATA,Histogram of estimation residuals on real pairs (clamped estimates excluded).
+fig25_accuracy_f1_vs_threshold.png,REAL DATA,Accuracy and F1 of the protected-template decision vs threshold (depend on the genuine:impostor ratio of the protocol).
+fig26_fusion_roc.png,REAL DATA,"ROC of single protected modalities vs equal-weight mean fusion score, chimeric virtual users from real data."
+fig27_robustness_frr_far.png,REAL DATA,FRR (bars) and FAR (ticks) of the deployed protected-template rule under degradations of real probes.
+fig28_memory_benchmark.png,REAL DATA,"Peak process memory per scenario (fresh process each, mean of 3 runs)."
+protected_vs_raw_roc.png,REAL DATA,"ROC of raw embedding cosine (dotted) vs 256-bit protected-template Hamming similarity (solid), identical pairs."
+threshold_far_frr_tar.png,REAL DATA,"FAR, FRR and TAR vs threshold of the deployed protected-template decision (face 0.60-0.90, voice 0.50-1.00)."
+threshold_roc_det_dev_test.png,REAL DATA,ROC and DET of the protected-template decision on the identity-disjoint development and test splits.

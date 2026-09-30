@@ -1,0 +1,18 @@
+# System configuration
+
+| parameter | value | source | evidence_label |
+|---|---|---|---|
+| Face embedding dimension | 512 | models/face/inference.py:17 | CONFIGURATION |
+| Voice embedding dimension | 192 | models/voice/inference.py:33 | CONFIGURATION |
+| Template bits (runtime) | 256 | backend/config.py:92 | CONFIGURATION |
+| Template sets per user (pool) | 4 | backend/config.py:98 | CONFIGURATION |
+| HKDF hash | SHA-256 | template_protection/hkdf_keys.py:61 | CONFIGURATION |
+| HKDF seed length (bytes) | 32 | template_protection/hkdf_keys.py:30 | CONFIGURATION |
+| Quantization threshold sigma | 0.5 x std(projected) | template_protection/transform.py:104 | CONFIGURATION |
+| Projection | Haar-random orthonormal rows (QR of seeded Gaussian), blocks of <= D rows | template_protection/transform.py:61 | CONFIGURATION |
+| Default fusion policy | ALL_REQUIRED | fusion/config.py:38 | CONFIGURATION |
+| Fusion weights | equal (1.0 each, renormalized) | fusion/score_fusion.py:32 | CONFIGURATION |
+| Face minimum valid poses | 3 | backend/services/face_enrollment.py:36 | CONFIGURATION |
+| Voice sample rate (Hz) | 16000 | preprocessing/voice.py:37 | CONFIGURATION |
+| Voice clip length (s) | 4 | preprocessing/voice.py:38 | CONFIGURATION |
+| Max upload size (bytes) | 5000000 | backend/config.py:112 | CONFIGURATION |

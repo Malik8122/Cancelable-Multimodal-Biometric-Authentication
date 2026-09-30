@@ -1,0 +1,39 @@
+{
+  "experiment_id": "face-20260925T031117Z",
+  "timestamp_utc": "2026-09-25T03:11:17+00:00",
+  "modality": "face",
+  "model": "InceptionResnetV1 (facenet-pytorch), pretrained='vggface2'; trainable: block8, last_linear, last_bn + ArcFace head",
+  "embedding_dimension": 512,
+  "dataset": "LFW funneled via sklearn.datasets.fetch_lfw_people(min_faces_per_person=20, resize=1.0, color=True)",
+  "dataset_version": "scikit-learn LFW (default slice -> 125x94 crops)",
+  "num_subjects": 62,
+  "num_samples": 3023,
+  "samples_after_face_detection": 2984,
+  "skipped_no_face": 39,
+  "split": {
+    "train": 2065,
+    "validation": 423,
+    "test": 496,
+    "rule": "per-identity 70/15/15, np.random.default_rng(42) (notebook cell 8); identities shared across splits (closed-set)"
+  },
+  "preprocessing": {
+    "detector": "MTCNN image_size=160, margin=0, post_process=True",
+    "alignment": "bounding-box crop (landmarks used only for quality gates in enrollment, not here)",
+    "input_normalization": "(x - 127.5) / 128"
+  },
+  "augmentation": "none",
+  "loss": "ArcFace (ArcMarginProduct s=30.0, m=0.50) + CrossEntropy",
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "scheduler": "none",
+  "batch_size": 32,
+  "configured_epochs": 10,
+  "random_seed": 42,
+  "checkpoint_selection": "final epoch (the notebook saves the model after the last epoch; there is no best-checkpoint selection)",
+  "differences_from_historical_notebook": [
+    "torch/numpy/random seeded with 42 (notebook unseeded)",
+    "validation loss, EER and AUC additionally logged (notebook logged val_acc only)"
+  ],
+  "source": "kaggle_kernels/face_training/face-embedding-training.ipynb cells 4-16",
+  "git_commit": "873c13ef96c67034657adbd7cc3789b0a0b17037"
+}

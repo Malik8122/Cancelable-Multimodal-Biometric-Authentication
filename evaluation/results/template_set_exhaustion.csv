@@ -1,0 +1,8 @@
+field,value
+experiment,template_set_exhaustion
+pool_size,4
+successful_revocations,3
+expected_successful_revocations,3
+exhaustion_refused_http_409,True
+active_set_still_authenticates,True
+final_active_set_version,4

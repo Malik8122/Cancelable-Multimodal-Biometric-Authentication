@@ -1,0 +1,6 @@
+# Protected-template (deployed) performance
+
+| modality | score | n_genuine | n_impostor | EER | EER_95CI | ROC_AUC | TAR@FAR=1% | TAR@FAR=0.1% | operating_rule | FAR@op | FRR@op | F1@op | source | evidence_label |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| face | estimated_cosine | 4523 | 80900 | 8.50% | 7.76% - 8.90% | 0.9641 | 77.47% | 53.42% | estimated_cosine >= 0.8 | 0.00% | 81.49% | 0.3122 | evaluation/results/raw_vs_protected_metrics.csv (python -m evaluation.ieee.experiments) | REAL DATA |
+| voice | estimated_distance | 727 | 17273 | 2.32% | 1.94% - 3.03% | 0.9967 | 91.75% | 69.60% | estimated_distance <= 0.75 | 0.26% | 23.80% | 0.8356 | evaluation/results/raw_vs_protected_metrics.csv (python -m evaluation.ieee.experiments) | REAL DATA |

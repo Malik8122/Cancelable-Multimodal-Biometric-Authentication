@@ -1,0 +1,24 @@
+[
+  {
+    "checkpoint": "voice_embedder_last.pt",
+    "epoch": 8,
+    "timestamp_utc": "2026-09-25T06:45:05+00:00",
+    "git_commit": "873c13ef96c67034657adbd7cc3789b0a0b17037",
+    "random_seed": 42,
+    "train_loss": 0.14713101025492692,
+    "validation_loss": 1.0343252370754878,
+    "validation_EER": 0.02626140009167789,
+    "validation_AUC": 0.9954400392482983
+  },
+  {
+    "checkpoint": "voice_embedder_best.pt",
+    "epoch": 8,
+    "timestamp_utc": "2026-09-25T06:45:05+00:00",
+    "git_commit": "873c13ef96c67034657adbd7cc3789b0a0b17037",
+    "random_seed": 42,
+    "train_loss": 0.14713101025492692,
+    "validation_loss": 1.0343252370754878,
+    "validation_EER": 0.02626140009167789,
+    "validation_AUC": 0.9954400392482983
+  }
+]

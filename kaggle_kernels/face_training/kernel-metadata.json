@@ -1,0 +1,13 @@
+{
+  "id": "<your-kaggle-username>/face-embedding-training-phase-1",
+  "title": "Face Embedding Training (Phase 1)",
+  "code_file": "face-embedding-training.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

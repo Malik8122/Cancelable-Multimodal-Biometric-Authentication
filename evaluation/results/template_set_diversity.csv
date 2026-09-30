@@ -1,0 +1,14 @@
+field,value
+experiment,template_set_diversity
+modalities_per_set,2
+sets_per_user,4
+num_users,20
+output_bits,256
+cross_set_pairs,240
+cross_set_similarity_mean,0.502587890625
+cross_set_similarity_std,0.032029327086749174
+cross_set_similarity_min,0.3828125
+cross_set_similarity_max,0.59375
+same_key_genuine_mean,0.97783203125
+cross_set_similarity_mean_face,0.500390625
+cross_set_similarity_mean_voice,0.50478515625

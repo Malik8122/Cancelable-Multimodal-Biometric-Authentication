@@ -1,0 +1,45 @@
+{
+  "experiment_id": "face_bbox_fullframe_v2",
+  "timestamp_utc": "2026-09-25T07:55:23+00:00",
+  "modality": "face",
+  "model": "InceptionResnetV1 (facenet-pytorch), pretrained='vggface2'; trainable: block8, last_linear, last_bn + ArcFace head",
+  "embedding_dimension": 512,
+  "dataset": "LFW funneled via sklearn.datasets.fetch_lfw_people(min_faces_per_person=20, resize=1.0, color=True)",
+  "dataset_version": "LFW funneled full frames 250x250 (same files as the sklearn set)",
+  "image_source": "full_frame",
+  "num_subjects": 62,
+  "num_samples": 3023,
+  "samples_after_face_detection": 3023,
+  "skipped_no_face": 0,
+  "skipped_alignment_failed": 0,
+  "kept_image_indices_sha256": "ad6a0cb5877f180f3fa8a3c1acf86b21bc522217ea7fc8cec5ee26bb5b48f27b",
+  "split": {
+    "train": 2091,
+    "validation": 426,
+    "test": 506,
+    "rule": "per-identity 70/15/15, np.random.default_rng(42) (notebook cell 8); identities shared across splits (closed-set)"
+  },
+  "preprocessing": {
+    "detector": "MTCNN image_size=160, margin=0, post_process=True",
+    "alignment": "bounding-box crop (landmarks used only for quality gates in enrollment, not here)",
+    "face_selection": "largest detected face",
+    "input_normalization": "(x - 127.5) / 128"
+  },
+  "augmentation": "none",
+  "loss": "ArcFace (ArcMarginProduct s=30.0, m=0.50) + CrossEntropy",
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "scheduler": "none",
+  "batch_size": 32,
+  "configured_epochs": 10,
+  "random_seed": 42,
+  "checkpoint_selection": "final epoch (the notebook saves the model after the last epoch; there is no best-checkpoint selection)",
+  "differences_from_historical_notebook": [
+    "torch/numpy/random seeded with 42 (notebook unseeded)",
+    "validation loss, EER and AUC additionally logged (notebook logged val_acc only)",
+    "full-frame 250x250 LFW images instead of the sklearn 125x94 slice (see image_source)"
+  ],
+  "source": "kaggle_kernels/face_training/face-embedding-training.ipynb cells 4-16",
+  "controlled_variable": "face preprocessing (bbox) - all else identical within the pair",
+  "git_commit": "873c13ef96c67034657adbd7cc3789b0a0b17037"
+}

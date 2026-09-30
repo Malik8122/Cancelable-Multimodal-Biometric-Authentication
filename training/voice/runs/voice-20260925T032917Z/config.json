@@ -1,0 +1,60 @@
+{
+  "experiment_id": "voice-20260925T032917Z",
+  "timestamp_utc": "2026-09-25T03:29:17+00:00",
+  "modality": "voice",
+  "model": "SpeechBrain ECAPA_TDNN(input_size=80, lin_neurons=192), trained from scratch (no pretrained speaker weights)",
+  "embedding_dimension": 192,
+  "dataset": "Kaggle gaurav41/voxceleb1-audio-wav-files-for-india-celebrity",
+  "dataset_version": "Kaggle download (version as served at download time; version id NOT_AVAILABLE)",
+  "num_subjects": 24,
+  "num_samples": 4857,
+  "split": {
+    "train": 3389,
+    "validation": 717,
+    "test": 751,
+    "rule": "per-speaker 70/15/15, seed 42 (models/voice/dataset.py); speakers shared across splits (closed-set)"
+  },
+  "preprocessing": {
+    "sample_rate": 16000,
+    "clip_seconds": 4.0,
+    "n_mels": 80,
+    "n_fft": 400,
+    "hop_length": 160,
+    "vad_backend": "energy",
+    "vad_energy_threshold_ratio": 0.02,
+    "target_rms": 0.1
+  },
+  "augmentation": {
+    "enabled": false,
+    "configured_options_unused": {
+      "gaussian_noise_std": 0.005,
+      "speed_perturb_rates": [
+        0.9,
+        1.0,
+        1.1
+      ],
+      "time_mask_max_frames": 10,
+      "freq_mask_max_bins": 8,
+      "random_gain_db_range": [
+        -6.0,
+        6.0
+      ]
+    }
+  },
+  "loss": "ArcFace (margin 0.5, scale 30.0) + CrossEntropy",
+  "optimizer": "AdamW (weight_decay 0.0001)",
+  "learning_rate": 0.001,
+  "scheduler": "CosineAnnealingLR(T_max=30)",
+  "batch_size": 64,
+  "configured_epochs": 30,
+  "early_stopping_patience": 5,
+  "mixed_precision": "True (effective only on CUDA)",
+  "random_seed": 42,
+  "checkpoint_selection": "minimum validation loss (models/voice/train.py); validation EER/AUC are logged by this runner but NOT used for selection",
+  "differences_from_historical_run": [
+    "torch/numpy/random seeded with 42",
+    "train loss and validation EER/AUC additionally logged"
+  ],
+  "source": "models/voice/train.py, models/voice/config.py",
+  "git_commit": "873c13ef96c67034657adbd7cc3789b0a0b17037"
+}

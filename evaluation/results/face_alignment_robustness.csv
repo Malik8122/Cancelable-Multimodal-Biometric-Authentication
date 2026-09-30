@@ -1,0 +1,17 @@
+evidence_label,condition,system,failure_to_acquire,FRR_at_0.80,FAR_at_0.80,EER,mean_genuine_estimated_cosine,n_genuine,n_impostor
+REAL DATA,clean,E_bbox_v2,0,0.805,0,0.08,0.626202,200,200
+REAL DATA,clean,F_aligned_v2,0,0.785,0,0.0725,0.647028,200,200
+REAL DATA,rotation_15deg,E_bbox_v2,0,0.825,0,0.065,0.616383,200,200
+REAL DATA,rotation_15deg,F_aligned_v2,0,0.77,0,0.075,0.65516,200,200
+REAL DATA,rotation_30deg,E_bbox_v2,0,0.955,0,0.13,0.516895,200,200
+REAL DATA,rotation_30deg,F_aligned_v2,0,0.76,0,0.0675,0.656833,200,200
+REAL DATA,dark_gamma2.2,E_bbox_v2,0,0.945,0,0.13,0.515689,200,200
+REAL DATA,dark_gamma2.2,F_aligned_v2,0,0.84,0,0.1,0.604036,200,200
+REAL DATA,bright_gamma0.45,E_bbox_v2,0,0.855,0,0.08,0.614662,200,200
+REAL DATA,bright_gamma0.45,F_aligned_v2,0,0.775,0,0.065,0.647259,200,200
+REAL DATA,distance_scale0.5,E_bbox_v2,0,0.825,0,0.0725,0.624225,200,200
+REAL DATA,distance_scale0.5,F_aligned_v2,0,0.77,0,0.0775,0.637503,200,200
+REAL DATA,distance_scale0.25,E_bbox_v2,0,0.935,0,0.1425,0.499413,200,200
+REAL DATA,distance_scale0.25,F_aligned_v2,0,0.95,0,0.115,0.527834,200,200
+REAL DATA,blur_sigma2,E_bbox_v2,0,0.925,0,0.1,0.548349,200,200
+REAL DATA,blur_sigma2,F_aligned_v2,0,0.905,0,0.11,0.566776,200,200

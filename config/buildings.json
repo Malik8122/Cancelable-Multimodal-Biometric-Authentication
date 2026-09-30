@@ -1,0 +1,26 @@
+[
+  {
+    "id": "national_data_center",
+    "name": "National Data Centre",
+    "description": "Primary sovereign data infrastructure.",
+    "clearance_level": "IV"
+  },
+  {
+    "id": "defence_research_lab",
+    "name": "Defence Research Laboratory",
+    "description": "Restricted research and development wing.",
+    "clearance_level": "V"
+  },
+  {
+    "id": "administration_block",
+    "name": "Central Administration Block",
+    "description": "Government administration offices.",
+    "clearance_level": "III"
+  },
+  {
+    "id": "nuclear_command_facility",
+    "name": "Nuclear Command Facility",
+    "description": "Strategic command and control.",
+    "clearance_level": "V"
+  }
+]

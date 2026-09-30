@@ -1,0 +1,8 @@
+field,value
+experiment,template_set_revocation
+num_users,20
+modalities_per_set,2
+genuine_similarity_before_mean,0.97919921875
+genuine_similarity_after_mean,0.980078125
+revoked_vs_new_similarity_mean,0.50185546875
+users_with_all_modalities_in_new_set,20

@@ -1,0 +1,5 @@
+metric,value
+modality,face
+accuracy,0.990
+eer,0.010
+auc,0.999

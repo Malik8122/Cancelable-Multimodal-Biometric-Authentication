@@ -1,0 +1,37 @@
+evidence_label,modality,metric,value,note
+REAL DATA,face,templates_analyzed,1618,
+REAL DATA,face,mean_fraction_of_ones,0.500331,
+REAL DATA,face,min_position_fraction_of_ones,0.464153,
+REAL DATA,face,max_position_fraction_of_ones,0.53152,
+REAL DATA,face,mean_hamming_weight_bits,128.085,
+REAL DATA,face,mean_per_bit_entropy_bits,0.999578,
+DERIVED,face,sum_per_bit_entropy_upper_bound_bits,255.892,upper bound; assumes independent bits
+REAL DATA,face,mean_abs_pairwise_bit_correlation,0.0198496,
+DERIVED,face,expected_mean_abs_correlation_if_independent,0.0198358,
+REAL DATA,face,fraction_bit_pairs_abs_corr_gt_0.1,3.06373e-05,
+REAL DATA,face,cross_user_cross_key_mean_normalized_HD,0.499804,
+REAL DATA,face,cross_user_cross_key_sd_normalized_HD,0.0314047,
+DERIVED,face,degrees_of_freedom_daugman,253.484,N = p(1-p)/sigma^2 from the cross-user cross-key HD distribution
+DERIVED,face,decision_max_differing_bits,46,
+REAL DATA,face,empirical_cross_key_collision_rate_at_threshold,0,fraction of 19985 cross-user cross-key pairs within 46 bits
+DERIVED,face,binomial_cross_key_collision_estimate_at_threshold,1.68031e-26,binomial model with the DoF above
+REAL DATA,face,key_rotation_same_embedding_mean_similarity,0.500229,
+REAL DATA,face,key_rotation_same_embedding_sd_similarity,0.0318902,
+REAL DATA,voice,templates_analyzed,24,
+REAL DATA,voice,mean_fraction_of_ones,0.482747,
+REAL DATA,voice,min_position_fraction_of_ones,0.166667,
+REAL DATA,voice,max_position_fraction_of_ones,0.75,
+REAL DATA,voice,mean_hamming_weight_bits,123.583,
+REAL DATA,voice,mean_per_bit_entropy_bits,0.965269,
+DERIVED,voice,sum_per_bit_entropy_upper_bound_bits,247.109,upper bound; assumes independent bits
+REAL DATA,voice,mean_abs_pairwise_bit_correlation,0.167176,
+DERIVED,voice,expected_mean_abs_correlation_if_independent,0.162868,
+REAL DATA,voice,fraction_bit_pairs_abs_corr_gt_0.1,0.596078,
+REAL DATA,voice,cross_user_cross_key_mean_normalized_HD,0.496808,
+REAL DATA,voice,cross_user_cross_key_sd_normalized_HD,0.0331242,
+DERIVED,voice,degrees_of_freedom_daugman,227.84,N = p(1-p)/sigma^2 from the cross-user cross-key HD distribution
+DERIVED,voice,decision_max_differing_bits,55,
+REAL DATA,voice,empirical_cross_key_collision_rate_at_threshold,0,fraction of 19173 cross-user cross-key pairs within 55 bits
+DERIVED,voice,binomial_cross_key_collision_estimate_at_threshold,4.3131e-19,binomial model with the DoF above
+REAL DATA,voice,key_rotation_same_embedding_mean_similarity,0.50293,
+REAL DATA,voice,key_rotation_same_embedding_sd_similarity,0.0244421,

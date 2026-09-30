@@ -1,0 +1,46 @@
+# --- Core ---
+numpy>=1.26
+scipy>=1.11
+opencv-python-headless>=4.9
+Pillow>=10.2
+PyYAML>=6.0
+
+# --- Deep learning (CPU by default; install a CUDA build separately on Colab/GPU machines) ---
+torch>=2.2
+torchvision>=0.17
+facenet-pytorch>=2.5.3
+
+# --- Evaluation ---
+scikit-learn>=1.4
+matplotlib>=3.8
+
+# --- Testing ---
+pytest>=8.0
+h5py>=3.10
+
+# --- Real GPU training orchestration (Kaggle Kernels) ---
+kaggle>=1.6
+
+# --- Cancelable template protection (template_protection/) ---
+cryptography>=42.0
+
+# --- Backend (Phase 2) ---
+fastapi>=0.110
+uvicorn[standard]>=0.27
+sqlalchemy>=2.0
+# PostgreSQL driver (production database - Neon Free; SQLite remains the
+# local/dev default via backend/config.py::Settings.database_url).
+psycopg[binary]>=3.1
+pydantic>=2.6
+pydantic-settings>=2.2
+python-multipart>=0.0.9
+# pydantic-settings uses this to load `.env` (backend/config.py's
+# `env_file=".env"`) - explicit here rather than relying on it being pulled
+# in transitively, so a production install can't silently lose .env support.
+python-dotenv>=1.0
+
+# --- Voice (speaker verification) - real ECAPA-TDNN backbone + Kaggle/Colab training.
+# preprocessing/voice.py itself and this project's offline tests need none of
+# these (numpy/scipy only) - see docs/VOICE_MODEL.md's dependency note. ---
+torchaudio>=2.2
+speechbrain>=1.0
