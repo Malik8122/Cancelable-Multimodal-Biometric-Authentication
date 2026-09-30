@@ -370,18 +370,6 @@ Full principles, the BioHashing/HKDF design, and current honest limitations:
   process; that's out of scope for this capstone's biometric-verification
   focus, not an oversight (see `docs/BACKEND_API.md`).
 
-## Team / contributor roles
-
-- **Member 1 — Face:** dataset, preprocessing, model, evaluation, `models/face/`.
-- **Member 2 — Iris** (modality since removed from the system).
-- **Member 3 — Fingerprint (modality since removed) + integration/privacy:** the
-  `template_protection/` cancelable-transform implementation and the `backend/`
-  FastAPI integration.
-
-Every modality shares the `BaseEmbedder` interface
-(`models/common/base_embedder.py`) precisely so this split can happen without
-one member's work blocking another's.
-
 ## License
 
 MIT — see [`LICENSE`](LICENSE). This covers the code in this repository; it
